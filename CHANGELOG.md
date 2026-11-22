@@ -4,6 +4,10 @@ All notable changes to Path Finder. Format: [Keep a Changelog](https://keepachan
 
 ## 2026-11-22
 
+### Added
+- Demo video link (Google Drive) in the README, `video/README.md` and the deck (slides 7 and 10,
+  as clickable links).
+
 ### Changed
 - Team details (Trinity Stack, TIET) in the README and presentation; `make bundle` writes
   `TIET_TrinityStack.zip`. The public deck lists member names without phone numbers.
