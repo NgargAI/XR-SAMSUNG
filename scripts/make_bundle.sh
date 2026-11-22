@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Build the Track 03 submission bundle: <TEAM>.zip with
 #   estimated_trajectory.txt, metadata.json, src/ (main.cpp, main.py, ..., README.md)
-# usage: scripts/make_bundle.sh CollegeName_TeamName
+# usage: scripts/make_bundle.sh TIET_TrinityStack
 set -euo pipefail
-team="${1:?usage: make_bundle.sh CollegeName_TeamName}"
+team="${1:?usage: make_bundle.sh TIET_TrinityStack}"
 [[ "$team" =~ ^[A-Za-z0-9_.-]+$ ]] || { echo "team name may only contain letters, digits, _ . -" >&2; exit 2; }
 root="$(cd "$(dirname "$0")/.." && pwd)"
 stage="$(mktemp -d)"

@@ -1,8 +1,11 @@
 # Path Finder: Trajectory Estimation Under Sensor Degradation
 
-Last updated: 2026-11-22 05:26 PM IST
+Last updated: 2026-11-22 05:41 PM IST
 
-**Samsung XR Hackathon 2026, Track 03.** Estimate a 6-DoF trajectory (position + orientation)
+**Samsung XR Hackathon 2026, Track 03.** Team **Trinity Stack**, Thapar Institute of Engineering and
+Technology (TIET): Aashiya Ahuja, Naman Garg, Naman Narang.
+
+We estimate a 6-DoF trajectory (position + orientation)
 from a degrading IMU alone, keep going when frames drop, and dead-reckon for 5 seconds after the
 IMU dies, within 8 MB of peak RAM and 20 ms of compute per second of IMU data on one CPU thread.
 
@@ -30,14 +33,14 @@ IMU dies, within 8 MB of peak RAM and 20 ms of compute per second of IMU data on
 
 | Item | Where |
 |---|---|
-| Submission package (Track 03 bundle) | [`submission/`](submission): `estimated_trajectory.txt`, `metadata.json`; `make bundle TEAM=CollegeName_TeamName` builds the zip with `src/` |
+| Submission package (Track 03 bundle) | [`submission/`](submission): `estimated_trajectory.txt`, `metadata.json`; `make bundle` builds `TIET_TrinityStack.zip` with `src/` |
 | Source code | [`src/main.cpp`](src/main.cpp) (contest entry point), [`src/main.py`](src/main.py) (standalone Python script), demo and model code in [`src/`](src) |
 | Presentation | [`presentation/`](presentation) |
 | Video (pipeline walkthrough, max 3 min) | [`video/README.md`](video/README.md) |
 | AI disclosure | [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) |
 | README | this file; build and run details in [`src/README.md`](src/README.md) |
 | Docker | [`Dockerfile`](Dockerfile) |
-| APK / SDK | not applicable: offline command-line tool |
+| APK / SDK | not applicable: an offline command-line tool, not a mobile app or library (build the binary with `make build`) |
 
 <sub>[↑ Back to contents](#contents)</sub>
 
@@ -154,7 +157,7 @@ python src/train_and_test.py data/gyro_accel.csv --vicon data/vicon_capture_quat
 bash scripts/make_figures.sh                                                                  # regenerate docs/figures
 ```
 
-**Submission zip:** `make bundle TEAM=CollegeName_TeamName` writes `CollegeName_TeamName.zip`
+**Submission zip:** `make bundle` writes `TIET_TrinityStack.zip`
 with `estimated_trajectory.txt`, `metadata.json` and `src/`.
 
 Options for every script: `--help`. Details: [`src/README.md`](src/README.md).

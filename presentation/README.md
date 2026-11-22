@@ -1,9 +1,10 @@
 # Presentation
 
-`CollegeName_TeamName.pptx` (and a PDF copy) follows the hackathon's submission template.
-Before submitting: fill in the team name, college name and member details on the first slide,
-add the demo-video link on the "Demo & local setup" slide, and rename both files to
-`<CollegeName>_<TeamName>` as the rules require.
+Last updated: 2026-11-22 05:40 PM IST
 
-All figures in the deck come from `docs/figures/` and all numbers from `submission/metadata.json`
+`TIET_TrinityStack.pptx` (and a PDF copy): Team Trinity Stack, Thapar Institute of Engineering and
+Technology (TIET), Track 03. It follows the hackathon's submission template.
+
+This public copy lists member names only; contact numbers are in the copy submitted through the
+Google Form. All figures come from `docs/figures/` and all numbers from `submission/metadata.json`
 and the README results tables.

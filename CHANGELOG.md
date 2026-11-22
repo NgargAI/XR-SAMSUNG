@@ -4,6 +4,11 @@ All notable changes to Path Finder. Format: [Keep a Changelog](https://keepachan
 
 ## 2026-11-22
 
+### Changed
+- Team details (Trinity Stack, TIET) in the README and presentation; `make bundle` writes
+  `TIET_TrinityStack.zip`. The public deck lists member names without phone numbers.
+- Brownie slides show measured numbers instead of trajectory plots.
+
 ### Added
 - Repository in the Track 03 submission layout: `src/main.cpp` (C++ entry point), `src/main.py`
   (standalone Python entry point), `submission/` (trajectory + `metadata.json`), `data/`,

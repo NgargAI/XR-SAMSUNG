@@ -5,7 +5,7 @@ BIN      := build/pathfinder
 IMU      ?= data/gyro_accel.csv
 VICON    ?= data/vicon_capture_quaternion.csv
 OUT      ?= submission/estimated_trajectory.txt
-TEAM     ?= CollegeName_TeamName
+TEAM     ?= TIET_TrinityStack
 
 .PHONY: help build run test lint figures bundle clean
 
@@ -15,7 +15,7 @@ help:
 	@echo "make test                  python tests + C++ smoke test"
 	@echo "make lint                  ruff + mypy --strict + bandit"
 	@echo "make figures               regenerate docs/figures from the code"
-	@echo "make bundle TEAM=Name      build $(TEAM).zip in the contest layout"
+	@echo "make bundle               build $(TEAM).zip in the contest layout"
 
 $(BIN): src/main.cpp
 	@mkdir -p build
