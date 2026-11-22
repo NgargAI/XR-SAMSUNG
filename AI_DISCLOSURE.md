@@ -1,6 +1,6 @@
 # AI Disclosure
 
-Last updated: 2026-11-22 05:26 PM IST
+Last updated: 2026-11-22 06:02 PM IST
 
 This project was built with substantial help from an AI assistant. We disclose it in full, as the
 hackathon requires.
@@ -19,6 +19,9 @@ hackathon requires.
   the train/test evaluation, and the diagnosis of where the predictions fail.
 - **Documentation and slides:** this repository's README files, the figures in `docs/figures/`,
   and the draft content of the presentation.
+- **Demo video:** the walkthrough video was assembled by Claude from the presentation slides and
+  real terminal runs of this code. The narration is a synthetic voice generated offline with the
+  open-source Piper text-to-speech engine (voice `en-us-lessac-medium`), not a team member's voice.
 
 ## What the team did
 
@@ -26,7 +29,7 @@ hackathon requires.
 - Supplied the IMU and Vicon recordings in `data/`.
 - Directed the work: asked for the approach, reviewed results, requested changes (for example the
   train/test split and the 4-second graph), and ran the code locally in VS Code.
-- Is responsible for the submission, the team details in the presentation, and the demo video.
+- Is responsible for the submission and the team details in the presentation, and reviewed the demo video.
 
 ## How the AI output was checked
 
