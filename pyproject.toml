@@ -1,0 +1,24 @@
+[tool.ruff]
+line-length = 140
+target-version = "py310"
+# tools/ holds quick research scripts from development; they are not held to the src/ standard.
+extend-exclude = ["tools"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "N", "D", "ANN", "S", "RUF", "PTH", "PL"]
+ignore = [
+  "D203", "D213",          # docstring layout: pick one style
+  "PLR2004",               # numeric constants are the algorithm's tuning values, named where it helps
+  "PLR0913", "PLR0915", "PLR0912", "PLR0911",  # the estimator mirrors pathfinder.cpp line for line on purpose
+  "UP031",                 # %-formatting kept: it is the exact TUM output format shared with the C++ version
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "D", "ANN401", "PLR2004"]
+
+[tool.mypy]
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["sklearn", "sklearn.*"]  # scikit-learn ships no type stubs
+ignore_missing_imports = true
