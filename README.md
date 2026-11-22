@@ -1,6 +1,8 @@
 # Path Finder: Trajectory Estimation Under Sensor Degradation
 
-Last updated: 2026-11-22 05:41 PM IST
+[![CI](https://github.com/NgargAI/XR-SAMSUNG/actions/workflows/ci.yml/badge.svg)](https://github.com/NgargAI/XR-SAMSUNG/actions/workflows/ci.yml)
+
+Last updated: 2026-11-22 05:51 PM IST
 
 **Samsung XR Hackathon 2026, Track 03.** Team **Trinity Stack**, Thapar Institute of Engineering and
 Technology (TIET): Aashiya Ahuja, Naman Garg, Naman Narang.
