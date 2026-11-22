@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/NgargAI/XR-SAMSUNG/actions/workflows/ci.yml/badge.svg)](https://github.com/NgargAI/XR-SAMSUNG/actions/workflows/ci.yml)
 
-Last updated: 2026-11-22 06:20 PM IST
+Last updated: 2026-11-22 06:23 PM IST
 
 **Samsung XR Hackathon 2026, Track 03.** Team **Trinity Stack**, Thapar Institute of Engineering and
 Technology (TIET): Aashiya Ahuja, Naman Garg, Naman Narang.
@@ -37,7 +37,7 @@ IMU dies, within 8 MB of peak RAM and 20 ms of compute per second of IMU data on
 |---|---|
 | Submission package (Track 03 bundle) | [`submission/`](submission): `estimated_trajectory.txt`, `metadata.json`; `make bundle` builds `TIET_TrinityStack.zip` with `src/` |
 | Source code | [`src/main.cpp`](src/main.cpp) (contest entry point), [`src/main.py`](src/main.py) (standalone Python script), demo and model code in [`src/`](src) |
-| Presentation | [`presentation/`](presentation) |
+| Presentation | [`TIET_TrinityStack.pptx`](presentation/TIET_TrinityStack.pptx) · [PDF](presentation/TIET_TrinityStack.pdf) in [`presentation/`](presentation) |
 | Video (pipeline walkthrough, 2:45) | [Watch on Google Drive](https://drive.google.com/file/d/1KbKA4LGNumPrQeiG0KWNj3ujcqOtw9zX/view?usp=drivesdk) · details in [`video/README.md`](video/README.md) |
 | AI disclosure | [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) |
 | README | this file; build and run details in [`src/README.md`](src/README.md) |
