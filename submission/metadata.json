@@ -1,0 +1,25 @@
+{
+  "track": "03 - Path Finder: Trajectory Estimation Under Sensor Degradation",
+  "entrypoint": "src/main.cpp (build: make build; run: build/pathfinder imu0/data.csv estimated_trajectory.txt)",
+  "input_file": "data/gyro_accel.csv",
+  "imu_rows": 255029,
+  "output_poses": 255029,
+  "one_pose_per_imu_row": true,
+  "imu_duration_s": 1275.1,
+  "peak_memory_mb": 2.08,
+  "peak_memory_limit_mb": 8,
+  "runtime_s": 1.066,
+  "runtime_ms_per_1s_of_imu": 0.836,
+  "runtime_limit_ms_per_1s": 20,
+  "threads": 1,
+  "offline": true,
+  "ate_rmse_vs_vicon_m": 0.585,
+  "ate_never_move_baseline_m": 0.577,
+  "compute": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "os": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "flags": "-O2 -std=c++17 -static"
+  },
+  "measured_on": "2026-11-22"
+}

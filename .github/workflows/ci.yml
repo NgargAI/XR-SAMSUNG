@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build-and-test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Build C++ estimator
+        run: make build
+      - name: Tests (Python + C++ smoke test)
+        run: make test
+      - name: Lint, type-check, security scan
+        run: make lint
+      - name: Dependency audit
+        run: python -m pip_audit -r requirements.txt
